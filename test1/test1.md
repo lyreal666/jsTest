@@ -165,7 +165,7 @@ console.log(student['background-color']);
 >1. 在js文件头部声明`'use strict';`即可
 >2. 可以在函数内部声明严格模式的
 
-![测试图片]https://github.com/lyreal666/jsTest/blob/master/test1/eq9.png?raw=true)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq9.png?raw=true)
 
 
 
@@ -211,7 +211,7 @@ var poem = `  静夜诗
 console.log(poem);
 ````
 
-![测试图片]https://github.com/lyreal666/jsTest/blob/master/test1/e10.png?raw=true)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/e10.png?raw=true)
 
 
 
