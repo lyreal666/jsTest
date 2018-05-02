@@ -12,7 +12,7 @@ typora-root-url: ./
 
 右键感兴趣的页面部分 => 检查
 
-![示例图片](/eq2.png)	
+![示例图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq2.png?raw=true)	
 
 
 
@@ -113,7 +113,7 @@ console.log(变量)
 
 >''  == false ? 
 
-![图片](/eq7.png)
+![图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq7.png?raw=true)
 
 
 
@@ -154,7 +154,7 @@ var student = {
 console.log(student['background-color']);
 ```
 
-![测试图片](/eq8.png)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq8.png?raw=true)
 
 
 
@@ -165,7 +165,7 @@ console.log(student['background-color']);
 >1. 在js文件头部声明`'use strict';`即可
 >2. 可以在函数内部声明严格模式的
 
-![测试图片](/eq9.png)
+![测试图片]https://github.com/lyreal666/jsTest/blob/master/test1/eq9.png?raw=true)
 
 
 
@@ -211,7 +211,7 @@ var poem = `  静夜诗
 console.log(poem);
 ````
 
-![测试图片](/e10.png)
+![测试图片]https://github.com/lyreal666/jsTest/blob/master/test1/e10.png?raw=true)
 
 
 
@@ -234,7 +234,7 @@ str1Copy = `${str1}`;
 console.log(`str1Copy: ${str1Copy}`);
 ```
 
-![测试图片](/e11.png)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/e11.png?raw=true)
 
 
 
@@ -248,7 +248,7 @@ arr = arr.slice(0, arr.indexOf(9)).concat(arr.slice(arr.indexOf(9) + 1))
 console.log(arr);
 ```
 
-![测试图片](/eq12.png)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq12.png?raw=true)
 
 
 
@@ -287,4 +287,4 @@ for (var k = 1; k < 4 ; ++k) {
 
 
 
-![测试图片](/eq14.png)
+![测试图片](https://github.com/lyreal666/jsTest/blob/master/test1/eq14.png?raw=true)
