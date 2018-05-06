@@ -60,13 +60,13 @@ if (0 < grade < 60) {
 
 ### 6.
 
->1. 写一个__for__ 的死循环
+>1. 写一个**for**的死循环
 >2. 为什么for in循环遍历数组得到key是`string`类型 而不是`number`类型
 >3. for ,while, do while分别适用于什么场景?
 
 ### 7.
 
->__Map__ 和 __Object__很像，貌似都可以保存`key-value`,尝试列出它们的几个区别
+>**Map** 和 **Object**很像，貌似都可以保存`key-value`,尝试列出它们的几个区别
 
 ### 8.
 
@@ -94,7 +94,7 @@ var item2 = {
 }
 ```
 
->写一个__map__ items,以__id__为key,__info__为value保存上面两条记录,并且用代码表示出item2的性别。
+>写一个**map** items,以**id**为key,**info**为value保存上面两条记录,并且用代码表示出item2的性别。
 
 
 
