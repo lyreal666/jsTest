@@ -150,6 +150,24 @@ var item2 = {
 >  这个问题各有各有看法,vue的开发者公开表示不要写分号,但就目前而言个人认为看个人喜好吧，
 >
 >  我还是比较建议要写分号，毕竟js不写分号还是有一些潜在的风险
+>
+>  最近做项目就碰到一个
+>
+>  >```
+>  >"use strict";
+>  >
+>  >async function test() {
+>  >    let resultArr = [] // 没分号会被认为在对空数组索引
+>  >    [1, 2, 3, 4].forEach(async (x) => resultArr.push(x));
+>  >    console.log(resultArr)
+>  >}
+>  >
+>  >(async () => {
+>  >    await test()
+>  >})();
+>  >```
+>
+>  
 
 >###  以后题目中的代码可能会出现ES6,7,8的语法，看不懂自己百度或问我，
 >
