@@ -72,14 +72,14 @@
 
 >#### 分别选用合适的数据类型用代码表示给出的伪代码数据
 >
->1. ```python
+>1. ```yaml
 >   file:
 >       fileName: 'test.txt'
 >       fileSize: 200
 >       type: 'executable'
 >   ```
 >
->2. ```python
+>2. ```yaml
 >   来过11栋的人:
 >     - 小刘
 >     - 小骆
@@ -90,7 +90,7 @@
 >     - 小胡
 >   ```
 >
->3. ```python
+>3. ```yaml
 >   items:
 >     item1:
 >       22
