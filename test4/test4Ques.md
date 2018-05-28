@@ -129,6 +129,21 @@ console.log(deal(digitalStrArray)); // [ 46， 13， 5， 2 ]
 4. 反思: 有了高阶函数,别人写的排序函数是不是得以定制化了?,就不用一个场景写一个排序函数。
 
 ```javascript
+let objects = [
+    {
+        level: "p7",
+        age: 28
+    },
+    {
+        level: "p7",
+        age: 19
+    },
+    {
+        level: "p5",
+        age: 19
+    }
+];
+
 /**
  * 
  * @param array
