@@ -2,7 +2,7 @@
  * @Author: ytj 
  * @Date: 2018-07-15 20:56:24 
  * @Last Modified by: ytj
- * @Last Modified time: 2018-07-15 22:24:23
+ * @Last Modified time: 2018-07-19 20:54:20
  */
 
 "use strict";
@@ -32,7 +32,7 @@ const getLocaleNowTimeStr = () => {
     return `localeTime=[星期${dayMap.get(day)}/${month + 1}月/${year}年:${hours}时:${minutes}分:${seconds}秒] timestamp=[${+nowDate}毫秒]`
 }
 
-console.log(getLocaleNowTimeStr()); // => localeTime=[星期日/7月/2018年:21时:13分:31秒] timestamp=[1531660411535毫秒]
+//console.log(getLocaleNowTimeStr()); // => localeTime=[星期日/7月/2018年:21时:13分:31秒] timestamp=[1531660411535毫秒]
 
 // 正则表达式 和 JSON
 
@@ -55,18 +55,32 @@ const dealStr = (toBeDealtStr) => {
     const pattern = /'\[name\]=(\w+?)\s+?\[age\]=(\d+?)\s+?\[grade\]=(\d)\s+?\[686\]=(\d+?)\n'Motto---(.+)/ig;
     let execResult = null;
     let students = [];
-    while (execResult = pattern.exec(toBeDealtStr)) {
+    // while (execResult = pattern.exec(toBeDealtStr)) {
+    //     let student = {
+    //         name: execResult[1],
+    //         age: execResult[2],
+    //         grade: execResult[3],
+    //         '溜不溜': execResult[4],
+    //         'motto': execResult[5]
+    //     }
+    //     students.push(student);
+    // }
+
+    let matchArray = toBeDealtStr.match(pattern);
+    const newPattern = /'\[name\]=(\w+?)\s+?\[age\]=(\d+?)\s+?\[grade\]=(\d)\s+?\[686\]=(\d+?)\n'Motto---(.+)/i;
+    matchArray.forEach(element => {
+        const result = element.match(newPattern);
         let student = {
-            name: execResult[1],
-            age: execResult[2],
-            grade: execResult[3],
-            '溜不溜': execResult[4],
-            'motto': execResult[5]
+            name: result[1],
+            age: result[2],
+            grade: result[3],
+            '溜不溜': result[4],
+            'motto': result[5]
         }
         students.push(student);
-    }
+    });
 
-    return  JSON.stringify(students);
+    return JSON.stringify(students);
 }
 
 console.log(dealStr(toBeDealtStr));
